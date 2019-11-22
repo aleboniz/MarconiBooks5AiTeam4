@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".main-navigation" data-offset="150">
+    <section id="MainContainer">
+        <!-- Header starts here -->
+        <header id="Header">
+            <nav class="main-navigation">
+                <div class="container clearfix">
+                    <div class="site-logo-wrap">
+                        <a class="logo" href="index.php"><img src="images/marconi-logo.png" style="width:170px; height:100px" alt="Itis Marconi"></a>
+                    </div>
+                    <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
+                    <div class="main-menu hidden-md-down">
+                        <ul class="menu-list">
+                            <li><a class="nav-link" href="index.php">Home</a></li>
+                            <li><a class="nav-link" href="services.html">Servizi</a></li>
+                            <li><a class="nav-link" href="contact.html">Contatti</a></li>
+                        </ul>
+                        <!--<h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>-->
+                        <p id="nome_login">
+                          <!--  <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> -->
+                            <a href="reset-password.php" class="btn btn-warning">Cambia password</a>
+                            <a href="logout.php" class="btn btn-danger">Esci</a>
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header ends here -->
+		<div class="hero-content"></div>
+        <!-- Services section starts here -->
+        <section id="Services">
+            <div class="container">
+                <div class="block-heading"><br>
+                    <h2>Servizi</h2>
+                </div>
+                <div class="services-wrapper">
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+						<a href="search.html" class="hero-cta">Search book</a>
+						<br>
+                        <p class="service-description">Start searching your school books for the new year.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-line-chart" href="search.html"aria-hidden="true"></i></div>
+						<a href="add.php" class="hero-cta">Add book</a>
+                        <p class="service-description">Add book that you want to sell to other students.</p>
+                    </div>
+                </div>
+            </div>
+					<br><br><br><br>
+        </section>
+        <!-- Services section ends here -->
+
+        <!-- Footer section starts here -->
+        <footer id="Footer">
+            <div class="container">
+                <div class="footer-logo-wrap">
+                    Designed by boniz & sandrink & isotheking</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section ends here -->
+    </section>
+</body>
+
+</html>
