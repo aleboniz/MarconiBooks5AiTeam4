@@ -115,7 +115,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <nav class="main-navigation">
                 <div class="container clearfix">
                     <div class="site-logo-wrap">
-                        <a class="logo" href="#"><img src="images/marconi-logo.png" style="width:170px; height:100px" alt="Itis Marconi"></a>
+                        <a class="logo" href="#"><img src="images/marconi-logo.png" style="width:200px; height:100px" alt="Itis Marconi"></a>
                     </div>
                     <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
                     <div class="main-menu hidden-md-down">

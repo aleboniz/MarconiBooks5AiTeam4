@@ -3,11 +3,39 @@
 require_once "config.php";
 
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = "";
-$username_err = $password_err = $confirm_password_err = "";
+$nome = $cognome = $email = $telefono = $username = $password = $confirm_password = "";
+$nome_err = $cognome_err = $email_err = $telefono_err =$username_err = $password_err = $confirm_password_err = "";
 
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    // Validate nome
+    if(empty(trim($_POST["nome"]))){
+        $nome_err = "Please enter your name.";
+    }else{
+        $nome = trim($_POST["nome"]);
+    }
+
+    // Validate cognome
+    if(empty(trim($_POST["cognome"]))){
+        $cognome_err = "Please enter your surname.";
+    }else{
+        $cognome = trim($_POST["cognome"]);
+    }
+
+    // Validate email
+    if(empty(trim($_POST["email"]))){
+        $email_err = "Please enter your email.";
+    }else{
+        $email = trim($_POST["email"]);
+    }
+
+    // Validate telefono
+    if(empty(trim($_POST["telefono"]))){
+        $telefono_err = "Please enter your telephone number.";
+    }else{
+        $telefono = trim($_POST["telefono"]);
+    }
 
     // Validate username
     if(empty(trim($_POST["username"]))){
@@ -62,16 +90,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     // Check input errors before inserting in database
-    if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
+    if(empty($nome_err) && empty($cognome_err) && empty($email_err) &&
+      empty($telefono_err) && empty($username_err) && empty($password_err) && empty($confirm_password_err)){
 
         // Prepare an insert statement
-        $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
+        $sql = "INSERT INTO users (nome, cognome, email, telefono, username, password) VALUES (?, ?, ?, ?, ?, ?)";
 
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+            mysqli_stmt_bind_param($stmt, "ssssss", $param_nome, $param_cognome, $param_email, $param_telefono, $param_username, $param_password);
 
             // Set parameters
+            $param_nome = $nome;
+            $param_cognome = $cognome;
+            $param_email = $email;
+            $param_telefono = $telefono;
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
 
@@ -120,7 +153,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <nav class="main-navigation">
                 <div class="container clearfix">
                     <div class="site-logo-wrap">
-                        <a class="logo" href="#"><img src="images/marconi-logo.png" style="width:170px; height:100px" alt="Itis Marconi"></a>
+                        <a class="logo" href="#"><img src="images/marconi-logo.png" style="width:200px; height:100px" alt="Itis Marconi"></a>
                     </div>
                     <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
                     <div class="main-menu hidden-md-down">
@@ -138,6 +171,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               <h2>Sign Up</h2>
               <p>Please fill this form to create an account.</p>
               <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                  <div class="form-group <?php echo (!empty($nome_err)) ? 'has-error' : ''; ?>">
+                      <label>Nome</label>
+                      <input type="text" name="nome" class="form-control" value="<?php echo $nome; ?>">
+                      <span class="help-block"><?php echo $nome_err; ?></span>
+                  </div>
+                  <div class="form-group <?php echo (!empty($cognome_err)) ? 'has-error' : ''; ?>">
+                      <label>Cognome</label>
+                      <input type="text" name="cognome" class="form-control" value="<?php echo $cognome; ?>">
+                      <span class="help-block"><?php echo $cognome_err; ?></span>
+                  </div>
+                  <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                      <label>Email</label>
+                      <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
+                      <span class="help-block"><?php echo $email_err; ?></span>
+                  </div>
+                  <div class="form-group <?php echo (!empty($telefono_err)) ? 'has-error' : ''; ?>">
+                      <label>Telefono</label>
+                      <input type="text" name="telefono" class="form-control" value="<?php echo $telefono; ?>">
+                      <span class="help-block"><?php echo $telefono_err; ?></span>
+                  </div>
                   <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                       <label>Username</label>
                       <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">

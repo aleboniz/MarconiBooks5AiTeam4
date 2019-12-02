@@ -1,52 +1,75 @@
 <?php
+
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+
 // Include config file
 require_once "configLibro.php";
 
 // Define variables and initialize with empty values
-$nome = $codice = $prezzo = "";
-$nome_err = $codice_err = $prezzo_err = "";
+$utente = $anno = $materia = $nome = $codice = $prezzo = "";
+$anno_err = $materia_err = $nome_err = $codice_err = $prezzo_err = "";
 
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    // Validate username
-    if(empty(trim($_POST["nome"]))){
-        $nome_err = "Inserire il nome del libro.";
-    } elseif(strlen(trim($_POST["nome"])) < 6){
-        $nome_err = "Password must have at least 6 characters.";
+    $utente = $_SESSION["username"];
+
+    // Validate anno
+    if(empty(trim($_POST["anno"]))){
+        $anno_err = "Inserire l'anno.";
     } else{
-        $nome = trim($_POST["codice"]);
+        $anno = trim($_POST["anno"]);
     }
 
-    // Validate password
+    // Validate materia
+    if(empty(trim($_POST["materia"]))){
+        $materia_err = "Inserire la materia.";
+    } else{
+        $materia = trim($_POST["materia"]);
+    }
+
+    // Validate nome
+    if(empty(trim($_POST["nome"]))){
+        $nome_err = "Inserire il nome del libro.";
+    } else{
+        $nome = trim($_POST["nome"]);
+    }
+
+    // Validate codice
     if(empty(trim($_POST["codice"]))){
         $codice_err = "Inserire il codice del libro.";
-    } elseif(strlen(trim($_POST["codice"])) < 6){
-        $codice_err = "Password must have at least 6 characters.";
     } else{
         $codice = trim($_POST["codice"]);
     }
 
-    // Validate confirm password
+    // Validate prezzo
     if(empty(trim($_POST["prezzo"]))){
         $prezzo_err = "Inserire il prezzo del libro.";
-    } elseif(strlen(trim($_POST["prezzo"])) < 6){
-        $prezzo_err = "Password must have at least 6 characters.";
     } else{
         $prezzo = trim($_POST["prezzo"]);
     }
 
     // Check input errors before inserting in database
-    if(empty($nome_err) && empty($codice) && empty($prezzo)){
+    if(empty($anno_err) && empty($materia_err) && empty($nome_err) && empty($codice_err) && empty($prezzo_err)){
 
         // Prepare an insert statement
-        $sql = "INSERT INTO books (nome, codice, prezzo) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO books (utente, anno, materia, nome, codice, prezzo) VALUES (?, ?, ?, ?, ?, ?)";
 
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ss", $param_nome, $param_codice, $param_prezzo);
+            mysqli_stmt_bind_param($stmt, "sssssi", $param_utente, $param_anno, $param_materia, $param_nome, $param_codice, $param_prezzo);
 
             // Set parameters
+            $param_utente = $utente;
+            $param_anno = $anno;
+            $param_materia = $materia;
             $param_nome = $nome;
             $param_codice = $codice;
             $param_prezzo = $prezzo;
@@ -54,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: services.html");
+                header("location: services.php");
             } else{
                 echo "Something went wrong. Please try again later.";
             }
@@ -72,21 +95,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Marconi Books</title>
+    <title>Add Book</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	  <style type="text/css"></style>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-  <style type="text/css">
+    <style type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
       body{ font: 14px sans-serif; }
       .wrapper{ width: 350px; padding: 20px; }
-  </style>
-
-
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".main-navigation" data-offset="150">
@@ -96,13 +115,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <nav class="main-navigation">
                 <div class="container clearfix">
                     <div class="site-logo-wrap">
-                        <a class="logo" href="#"><img src="images/marconi-logo.png" style="width:170px; height:100px" alt="Itis Marconi"></a>
+                        <a class="logo" href="index.php"><img src="images/marconi-logo.png" style="width:200px; height:100px" alt="Itis Marconi"></a>
                     </div>
                     <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
                     <div class="main-menu hidden-md-down">
                         <ul class="menu-list">
-
+                            <li><a class="nav-link" href="index.php">Home</a></li>
+                            <li><a class="nav-link" href="services.php">Servizi</a></li>
+                            <li><a class="nav-link" href="contact.php">Contatti</a></li>
                         </ul>
+                        <p id="nome_login" style="padding-top: 8px;">
+                            <a href="utente.php?utente=<?php echo $_SESSION["username"];?>" class="btn btn-danger" style="background-color:Green; border:1px solid Green;"><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+                            <a href="logout.php" class="btn btn-danger">Esci</a>
+                        </p>
                     </div>
                 </div>
             </nav>
@@ -111,9 +136,51 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         <section style="border:3px solid black;margin-top: 290px;margin-bottom: 230px;margin-right: 800px;margin-left: 750px;">
           <div class="wrapper">
-              <h2>Sign Up</h2>
-              <p>Please fill this form to create an account.</p>
+              <h2>Add a book</h2>
+              <p>Please fill this form to add a book.</p>
               <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
+                  <div class="form-group <?php echo (!empty($anno_err)) ? 'has-error' : ''; ?>">
+                      <label>Anno</label>
+                      <select name="anno" style="width: 140px; height: 35px;" class="form-control" value="<?php echo $anno; ?>">
+                        <option value="1">Prima</option>
+                        <option value="2">Seconda</option>
+                        <option value="3">Terza</option>
+                        <option value="4">Quarta</option>
+                        <option value="5">Quinta</option>
+                      </select>
+
+                      <span class="help-block"><?php echo $anno_err; ?></span>
+                  </div>
+
+                  <div class="form-group <?php echo (!empty($nome_err)) ? 'has-error' : ''; ?>">
+                      <label>Materia</label>
+                      <select name="materia" style="width: 140px; height: 35px;" class="form-control" value="<?php echo $materia; ?>">
+                        <option value="Matematica">Matematica</option>
+                        <option value="Storia">Storia</option>
+          					    <option value="Chimica">Chimica</option>
+          					    <option value="Diritto">Diritto</option>
+          					    <option value="Fisica">Fisica</option>
+          					    <option value="Inglese">Inglese</option>
+          					    <option value="Italiano">Italiano</option>
+          					    <option value="Religione">Religione</option>
+          					    <option value="Scienze Della Terra">Scienze della terra</option>
+          					    <option value="Biologia">Biologia</option>
+          					    <option value="Tecnologie e Tecniche di Rappresentazione Grafica">Tecnologie e Tecniche di Rappresentazione Grafica</option>
+          					    <option value="Informatica">Informatica</option>
+          					    <option value="Teleomunicazioni">Telecomunicazioni</option>
+          					    <option value="Tecnologie e Progettazione di sistemi Informatici">Tecnologie e Progettazione di sistemi Informatici</option>
+          					    <option value="Sistemi e Reti">Sistemi e Reti</option>
+          					    <option value="Struttura Costruzione Sistemi e Impianti">Struttura, Costruzione, Sistemi e Impianti</option>
+          					    <option value="Logistica">Logistica</option>
+          					    <option value="Meccanica e Macchine">Meccanica e Macchine</option>
+          					    <option value="Sistemi Automatici">Sistemi Automatici</option>
+          					    <option value="Tecnologie e Progettazione">Tecnologie e Progettazione</option>
+          					    <option value="Elettronica ed Elettrotecnica">Elettronica ed Elettrotecnica</option>
+                      </select>
+                      <span class="help-block"><?php echo $materia_err; ?></span>
+                  </div>
+
                   <div class="form-group <?php echo (!empty($nome_err)) ? 'has-error' : ''; ?>">
                       <label>Nome</label>
                       <input type="text" name="nome" class="form-control" value="<?php echo $nome; ?>">
@@ -125,7 +192,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                       <span class="help-block"><?php echo $codice_err; ?></span>
                   </div>
                   <div class="form-group <?php echo (!empty($prezzo_err)) ? 'has-error' : ''; ?>">
-                      <label>Prezzo del libro</label>
+                      <label>Prezzo di copertina del libro</label>
                       <input type="text" name="prezzo" class="form-control" value="<?php echo $prezzo; ?>">
                       <span class="help-block"><?php echo $prezzo_err; ?></span>
                   </div>

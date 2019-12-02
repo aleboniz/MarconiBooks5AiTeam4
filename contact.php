@@ -1,3 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,8 +17,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
 
 </head>
 <body data-spy="scroll" data-target=".main-navigation" data-offset="150">
@@ -17,19 +30,17 @@
             <nav class="main-navigation">
                 <div class="container clearfix">
                     <div class="site-logo-wrap">
-                        <a class="logo" href="index.php"><img src="images/marconi-logo.png" style="width:170px; height:100px" alt="Itis Marconi"></a>
+                        <a class="logo" href="index.php"><img src="images/marconi-logo.png" style="width:200px; height:100px" alt="Itis Marconi"></a>
                     </div>
                     <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
                     <div class="main-menu hidden-md-down">
                         <ul class="menu-list">
                             <li><a class="nav-link" href="index.php">Home</a></li>
-                            <li><a class="nav-link" href="services.html">Servizzi</a></li>
-                            <li><a class="nav-link" href="contact.html">Contatti</a></li>
+                            <li><a class="nav-link" href="services.php">Servizi</a></li>
+                            <li><a class="nav-link" href="contact.php">Contatti</a></li>
                         </ul>
-                        <!--<h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>-->
-                        <p id="nome_login">
-                          <!--  <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> -->
-                            <a href="reset-password.php" class="btn btn-warning">Cambia password</a>
+                        <p id="nome_login" style="padding-top: 8px;">
+                            <a href="utente.php?utente=<?php echo $_SESSION["username"];?>" class="btn btn-danger" style="background-color:Green; border:1px solid Green;"><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
                             <a href="logout.php" class="btn btn-danger">Esci</a>
                         </p>
                     </div>
@@ -49,10 +60,10 @@
                             <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span> <span class="c-info">Piazzale Romano Guardini, 1, 37138 Verona VR</span>
                         </div>
                         <div class="c-detail">
-                            <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span> <span class="c-info">+345979667</span>
+                            <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span> <span class="c-info">045/8101428</span>
                         </div>
                         <div class="c-detail">
-                            <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span> <span class="c-info">itis@gmail.com</span>
+                            <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span> <span class="c-info">vrtf03000v@istruzione.it</span>
                         </div>
 						<p class="add-title">Mappa</p>
 						<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=marconi%20verona&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.utilitysavingexpert.com">Utility Saving Expert</a>
@@ -63,7 +74,7 @@
                         <form>
                             <div class="fname floating-label">
                                 <input type="text" class="floating-input" name="first name" id="name-field" />
-                                <label for="full-name-field">First name</label>
+                                <label for="full-name-field">Nome</label>
                             </div>
                             <div class="email floating-label">
                                 <input type="email" class="floating-input" name="email" id="mail-field" />
@@ -71,18 +82,18 @@
                             </div>
                             <div class="contact floating-label">
                                 <input type="text" class="floating-input" name="second name" id="name-field" />
-                                <label for="contact-us-field">Second name</label>
+                                <label for="contact-us-field">Cognome</label>
                             </div>
                             <div class="company floating-label">
                                 <input type="text" class="floating-input" name="class" id="class-field" />
-                                <label for="company-field">Class</label>
+                                <label for="company-field">Classe</label>
                             </div>
                             <div class="user-msg floating-label">
                                 <textarea class="floating-input" name="user message" id="user-msg-field"></textarea>
-                                <label for="user-msg-field" class="msg-label">Your Message</label>
+                                <label for="user-msg-field" class="msg-label">Messaggio</label>
                             </div>
-                            <div class="submit-btn">
-                                <button type="submit">Submit</button>
+                            <div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>
