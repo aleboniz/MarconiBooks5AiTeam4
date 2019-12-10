@@ -7,13 +7,13 @@
 | **Users:** ITI Marconi&#39;s students |
 
 | **Purpose (Problem or opportunity addressed by the project)**: The purpose of our project is to create a platform where students of ITI Marconi can easily exchange and sale textbooks. Currently students must go physically to book shop or they must buy it online. Adding a web app will allow Marconi&#39;s students to buy and sell their books directly with other students. |
+
 | **Goals and Objectives** : The general goal of the project is to design and create a website to allow an easier books exchange between students of ITI Marconi.  The website is expected to:
 - *be usable*: it should allow users to register and create a personal account.
 - *be useful*: it should inform students about the available books.
 - *be convenient*: It should allow customers to directly contact sellers.
 - *be easy to use*: It should require no prior computer experience using a simple engaging interface.
-- *offer at least two modes*: a sale mode and a purchase mode. In the sale mode the user can add a book that he would like to sell by fill a simple form. In the purchase mode users can search a book that they need by filter particular features require.
-|
+- *offer at least two modes*: a sale mode and a purchase mode. In the sale mode the user can add a book that he would like to sell by fill a simple form. In the purchase mode users can search a book that they need by filter particular features require.|
 
 | **Schedule Information (Major milestones and deliverables)**: The following milestones are planned. They should not be made public outside of the immediate project team. The project duration is about 2 months. The schedule below is based on a 2-month project life cycle.
 ```
