@@ -5,6 +5,7 @@
 | **Project Sponsor:** ITI Marconi |
 | **Customer:** ITI Marconi |
 | **Users:** ITI Marconi&#39;s students |
+---
 
 | **Purpose (Problem or opportunity addressed by the project)**: The purpose of our project is to create a platform where students of ITI Marconi can easily exchange and sale textbooks. Currently students must go physically to book shop or they must buy it online. Adding a web app will allow Marconi&#39;s students to buy and sell their books directly with other students. |
 
