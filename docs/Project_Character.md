@@ -1,6 +1,6 @@
 | <u>**Project Title:**</u> Marconi Books <br>
 | <u>**Start Date:**</u> 24/10/2019 <br>
-| <u>**End Date:**</u> 12/12/2019 <br>
+| <u>**End Date:**</u> 19/12/2019 <br>
 | <u>**Project Manager:**</u> Drago Nicola <br>
 | <u>**Project Sponsor:**</u> ITI Marconi <br>
 | <u>**Customer:**</u> ITI Marconi <br>
@@ -18,20 +18,21 @@
 
 | <u>**Schedule Information (Major milestones and deliverables)**</u>: The following milestones are planned. They should not be made public outside of the immediate project team. The project duration is about 2 months. The schedule below is based on a 2-month project life cycle.
 ```
-	17/10/2019 - Project Charter Approved
-	17/10/2019 - Preliminary Requirements Complete
-	24/10/2019 - Create Initial Design of Website
-	24/10/2019 - Create Database for Users
-	24/10/2019 - Create Database for Books
-	31/10/2019 - Develop Add Section
-	07/11/2019 - Develop Search Section
-	mm/dd/2019 – Develop User Section
-	mm/dd/yyyy - System Test Complete
-	mm/dd/yyyy - Product Released 
+	24/10/2019 - Project Charter Approved
+	24/10/2019 - Preliminary Requirements Complete
+	31/10/2019 - Activity planning
+	31/10/2019 - Create Initial Design of Website
+	14/11/2019 - Create Database to store users account and books
+	14/11/2019 - Develop login and logout feature
+	21/11/2019 - Develop Add Section
+	28/11/2019 - Develop Search Section
+	05/12/2019 – Develop User Section
+	12/12/2019 - System Test Complete
+	19/12/2019 - Product Released 
 ```
 | <u>**Financial Information (Cost estimate and budget information)**</u>: The project doesn't expect any cost. The development of the Maconi Books platform require computer equipment and a internet connection. 
 
-| <u>**Project Priorities and degrees of freedom:**</u> There is very little flexibility with respect to quality : The software must be easy to use and reliable. 
+| <u>**Project Priorities and degrees of freedom:**</u> There is very little flexibility with respect to quality : the software must be easy to use and reliable. 
 
 | <u>**Approach:**</u> Iterative and incremental approached are planned.  Feedback will be used from one iteration to the next.  The group will follow the Scrum rules, by planning the work week per week. The first iteration will focus on basic building and functionality of the app.  Subsequent iterations will build upon that and incorporate more features as time allows.
 
