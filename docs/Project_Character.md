@@ -1,7 +1,7 @@
 | <u>**Project Title:**</u> Marconi Books <br>
 | <u>**Start Date:**</u> 24/10/2019 <br>
 | <u>**End Date:**</u> 19/12/2019 <br>
-| <u>**Project Manager:**</u> Drago Nicola <br>
+| <u>**Project Manager:**</u> Davide Isoni <br>
 | <u>**Project Sponsor:**</u> ITI Marconi <br>
 | <u>**Customer:**</u> ITI Marconi <br>
 | <u>**Users:**</u> ITI Marconi&#39;s students <br>
@@ -44,7 +44,7 @@
 
 | <u>**Scope**</u>: The structures may require a programming change by creating new version. The application don't allow to buy directly online a book. It is just useful to search a book and contact the owner to buy. In the next version will be implementing the buy-online feature. As mentioned in the goals section above, the delivered product should demonstrate the ability to deliver content tailored to the user's preferences, but a complete implementation of this feature is beyond the scope of the current project.
 
-| <u>**HeadingRisks and obstacles to success**</u>:  The programming staff has little experience in developing with SQL Databases and PHP. It will be necessary to learn the programming languages before start coding. One or two hard-to-find defects or errors could probably extend the testing phase delaying the ending of the project.
+| <u>**Heading Risks and obstacles to success**</u>:  The programming staff has little experience in developing with SQL Databases and PHP. It will be necessary to learn the programming languages before start coding. One or two hard-to-find defects or errors could probably extend the testing phase delaying the ending of the project.
 
 ## Signatures
 
