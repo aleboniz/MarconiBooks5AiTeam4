@@ -1,6 +1,4 @@
-# Police Activities League Program Involvement Tracking Project
-
-
+# Software Requirements for Marconi Books
 
 Table of Contents
 
@@ -9,14 +7,14 @@ Table of Contents
 | 1.1        Overview        |
 | 1.2        Goals and Objectives        |
 | 1.3        Scope        |
-| |
+
 | 2        General Design Constraints        |
 | --- |
 | 2.1        Product Environment        |
 | 2.2        User Characteristics        |
 | 2.3        Mandated Constraints        |
 | 2.4        Potential System Evolution        |
-| |
+
 | 3        Nonfunctional Requirements        |
 | --- |
 | 3.1        Performance Requirements        |
@@ -26,29 +24,23 @@ Table of Contents
 | 3.5        Other Quality Attributes        |
 | 3.6        External Interface        |
 | 3.6.1        User Interface        |
-| 3.8.2        Administrator Interface        |
-| |
+| 3.6.2        Administrator Interface        |
+
 | 4        System Features        |
 | --- |
 | 4.1        Feature: Users Database        |
 | 4.2        Feature: Books Database        |
-| |
+
 | 5        USE CASE        |
 | --- |
 | 5.1       Use-case: New Registrant |
-| |
 | 5.2       Use-case: User Login |
-| |
-
-
 
 # 1 Introduction
 
 ## 1.1 Overview
 
 This document defines the requirements for Marconi Book currently under development for ITI G.Marconi high school. This document is designed to be beneficial to both the user/customer as well as the development team. From this document the user will be able to determine our understanding of the requirements and verify their accuracy. The development team will be able to use it while developing the software system to ensure that the customer receives the expected product.
-
-
 
 ## 1.2 Goals and Objectives
 
@@ -74,7 +66,6 @@ Marconi Book will be hosted on the school&#39;s server. Administrators will be a
 ## 2.2 User Characteristics
 
 **Common Users** – students with the ability to create an account and to add or buy books.
-
 
 
 **Administrators** – (with PHP and HTML knowledge). These users will be accessing the database and the source code of the web pages, with the ability to work on the project.
@@ -129,26 +120,26 @@ The user will provide the following options:
 - .Search book button
 - .Profile management section
 
-# 43.6.2 Administrator Interface-
+### 3.6.2 Administrator Interface
 
 The interface, in addition to the options present in the User interface, will provide the following options:
 
 - .Ability to delete a books&#39; sale announcement
 - .Ability to delete a user&#39;s account
 
-# 5 System Features
+# 4 System Features
 
-## 5.1 Feature: Users Database
+## 4.1 Feature: Users Database
 
 The User Database will be where all of the information about the users will be kept. This section describes how new registrant information will be added to the database.
 
-## 5.2 Feature : Books Database
+## 4.2 Feature : Books Database
 
 The Books Database will be where all of the information about the books will be kept. This section describes how new registrant information will be added to the database.
 
-# 6 USE CASE
+# 5 USE CASE
 
-## 6.1 Use-case: New Registrant
+## 5.1 Use-case: New Registrant
 
 **Description:** The use-case begins when an unregistered user visit for the first time the web site.
 
@@ -158,7 +149,7 @@ Path:
 2. The user has now create his personal account and he is able to enter in Marconi Book and surf in it.
 3. The information will be recorded in the database for his next login.
 
-## 6.2 Use-case: User login
+## 5.2 Use-case: User login
 
 **Description:** The use-case begins when an already registered user login in the web site.
 
