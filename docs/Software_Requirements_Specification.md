@@ -1,6 +1,5 @@
 # Software Requirements for Marconi Books
 
-Table of Contents
 
 | 1        Introduction        |
 | --- |
