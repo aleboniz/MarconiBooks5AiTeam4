@@ -7,12 +7,16 @@
 | 1.2        Goals and Objectives        |
 | 1.3        Scope        |
 
+<br>
+
 | 2        General Design Constraints        |
 | --- |
 | 2.1        Product Environment        |
 | 2.2        User Characteristics        |
 | 2.3        Mandated Constraints        |
 | 2.4        Potential System Evolution        |
+
+<br>
 
 | 3        Nonfunctional Requirements        |
 | --- |
@@ -25,10 +29,14 @@
 | 3.6.1        User Interface        |
 | 3.6.2        Administrator Interface        |
 
+<br>
+
 | 4        System Features        |
 | --- |
 | 4.1        Feature: Users Database        |
 | 4.2        Feature: Books Database        |
+
+<br><br>
 
 | 5        USE CASE        |
 | --- |
