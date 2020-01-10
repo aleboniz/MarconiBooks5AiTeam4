@@ -2,9 +2,7 @@
 
 # Software Project Management Plan
 
-
-
-# Team 4
+## Team 4
 
 December 20, 2019
 
@@ -23,11 +21,10 @@ Document Control
 | **Revision** | **Change Date** | **Description of changes** |
 | --- | --- | --- |
 | V1.0 | 24/10/20 | Initial release |
-|   |   |   |
 
 **Document Storage**
 
-This document is stored in the project&#39;s Github repository at: [https://github.com/aleboniz/MarconiBooks5AiTeam4/blob/master/docs/SPMP.md](https://github.com/aleboniz/MarconiBooks5AiTeam4/blob/master/docs/SPMP.md)
+This document is stored in the project&#39;s Github repository at: https://github.com/aleboniz/MarconiBooks5AiTeam4/blob/master/docs/SPMP.md
 
 **Document Owner**
 
@@ -101,8 +98,8 @@ _3.3.3 Final Product        11_
 
 5.3 Product Acceptance Plan        13
 
-1. **1**** Overview**
-  1. **1.1**** Purpose and Scope**
+#1 Overview
+##1.1 Purpose and Scope
 
 Team 4 is interested in creating a mobile application that will be useful to students and give Marconi visibility. The Marconi Books platform accomplishes this by giving Marconi&#39;s students a way to keep track of school books information.
 
@@ -110,8 +107,7 @@ The Marconi Books website will provide users the ability to log in to their acco
 
 The user interface will be intuitive and simple to navigate. A user guide and system administration manual will be provided.
 
-1.
-  1. **1.2**** Goals and Objectives**
+##1.2 Goals and Objectives
 
 The overall objective is to give students an alternative way to buy and sell school books.
 
@@ -127,8 +123,7 @@ Create a website interface to give students access to their account information.
 
 Create a website that functions in a simple and intuitive manner.
 
-1.
-  1. **1.3**** Project Deliverables**
+##1.3 Project Deliverables
 
 ```
 	24/10/2019 - Project Charter Approved
@@ -141,17 +136,14 @@ Create a website that functions in a simple and intuitive manner.
 	28/11/2019 - Develop Search Section
 	05/12/2019 – Develop User Section
 	12/12/2019 - System Test Complete
-	19/12/2019 - Product Released 
+	19/12/2019 - Product Released
 ```
 
-1.
-  1. **1.4**** Assumptions and Constraints**
-    1. **1.4.1**** Assumptions**
+##1.4 Assumptions and Constraints
+###1.4.1 Assumptions
+Marconi Books is available and function when we need them.
 
-1. Marconi Books is available and function when we need them.
-
-1.
-  1. **1.5**** Definitions**
+##1.5 Definitions
 
 | **Term** | **Definition** |
 | --- | --- |
@@ -166,8 +158,8 @@ Create a website that functions in a simple and intuitive manner.
 | **User** | the person or persons who will actually interact with the Roo Balance application. |
 | **Use case** | describes a goal-oriented interaction between the system and an actor. A use case may define several variants called scenarios that result in different paths through the use case and usually different outcomes. |
 
-1. **2**** Startup Plan**
-  1. **2.1**** Team Organization**
+#2 Startup Plan
+##2.1 Team Organization
 
 | **Role** | ** Actor(s)** | **Responsibility** |
 | --- | --- | --- |
@@ -178,32 +170,26 @@ Create a website that functions in a simple and intuitive manner.
 | Architect | Alessandro | Specify overall internal workings of application |
 | Requirement Engineer | Mattia | Outline and document project dependencies and requirements. This includes internal and external dependencies. |
 
-1.
-  1. **2.2**** Project Communications**
+##2.2 Project Communications
 
 | **Event** | **Information** | **Audience** | **Format** | **Frequency** |
 | --- | --- | --- | --- | --- |
 | Team Meeting | Task status: completed since last meeting &amp; planned for next;obstacles encountered; change requests in process | All team members | Informal meetings following class; Formal meetings as needed; E-mail  status updates &amp; problems as they occur | As needed |
 | Project Status Report | Review finished items, status of prototype; review any problems, schedule slippage, programming issues | All team members, customer | E-mail with information or In-person as customer sees fit | Iteration Closeout |
 
-1.
-  1. **2.3**** Technical Process**
+#2.3 Technical Process
 
 An iterative and incremental development process is planned.  Feedback will be used from each iteration to improve the next.  The first iteration will focus on basic functionality of the application.  Subsequent iterations will build upon that and incorporate more features as time allows.
 
-1.
-  1. **2.4**** Tools**
+##2.4 Tools
 
 - Programming &amp; Markup Languages – HTML, PHP, MySQL
 - Operating System – Windows, Ubuntu
 - Version Control – all work products will be stored in an GitHub repository
 
-1. **3**** Work Plan**
-  1. **3.1**** Resource Estimate**
+#3 Work Plan
 
-1.
-  1. **3.2**** Release Plan**
-    1. **3.2.1**** Plan By Feature**
+##3.1 Release Plan
 
 ## Iteration #1
 
@@ -228,7 +214,6 @@ An iterative and incremental development process is planned.  Feedback will be u
 | Baseline system architecture | 2 hrs | 3 hrs |
 | Detailed descriptions of critical use cases | 5 hrs | 6 hrs |
 | Totals: | 11 hrs | 13 hrs |
-
 
 
 ## Iteration #3
@@ -285,8 +270,6 @@ An iterative and incremental development process is planned.  Feedback will be u
 
 
 
-
-
 ## **Features not scheduled but under consideration**
 
 | Feature | Effort Estimate |
@@ -296,10 +279,9 @@ An iterative and incremental development process is planned.  Feedback will be u
 | Email. Implement an online system to send email to the administrators in the Contact page. | 5 hrs |
 
 
-1. **4**** Control Plan**
+#4 Control Plan
 
-1.
-  1. **4.1**** Configuration Management Plan**
+##4.1 Configuration Management Plan
 
 The following procedure is to be used when making changes to all baselined work products:
 
@@ -315,8 +297,8 @@ The change control procedure once a product is baselined is:
 - if anyone does object to the change, the reason for objecting will be discussed at a meeting where everyone is invited to attend and voice their opinion. At the end of the meeting a democratic vote will be held to decide whether or not the change should be allowed.
 - if a change takes place, the initiator must collaborate with the project manager to update the schedule
 
-1. **5**** Supporting Process Plans**
-  1. **5.1**** Risk Management Plan**
+#5 Supporting Process Plans
+#5.1 Risk Management Plan
 
 | **Rank** | **Risk** | **Probability of Loss** | **Size of Loss** | **Risk Exposure** | **Response** |
 | --- | --- | --- | --- | --- | --- |
@@ -324,13 +306,11 @@ The change control procedure once a product is baselined is:
 | 2 | Logistic problems | Likely | Moderate | Moderate | Follow the program and organize materials and tools. |
 | 3 | Learning curve for new tools and technologies longer than expected | Unlikely | Moderate | Moderate | Buy Information: Begin working on a basic prototype early to test out fundamental programming concepts &amp; knowledge |
 
-1.
-  1. **5.2**** Test Plan**
+#5.2 Test Plan
 
 The test plan defines the items that will be tested, methods for testing, and a schedule detailing the tasks, owners, and timeline.
 
-1.
-  1. **5.3**** Product Acceptance Plan**
+#5.3 Product Acceptance Plan
 
 At the conclusion of each iteration, the prototype created will tested to ensure it meets the requirements of that iteration.  An environment such as the iPhone simulator may be used to test functionality in lieu of the app being loaded on an actual smartphone.
 
