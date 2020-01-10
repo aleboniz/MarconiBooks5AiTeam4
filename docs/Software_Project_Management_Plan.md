@@ -32,71 +32,45 @@ Alessandro Bonizzato is responsible for developing and maintaining this document
 
 # Table of Contents
 
-**1 OVERVIEW        4**
+**1 OVERVIEW**
 
-1.1 Purpose and Scope        4
+1.1 Purpose and Scope        
 
-1.2 Goals and Objectives        4
+1.2 Goals and Objectives        
 
-1.3 Project Deliverables        5
+1.3 Project Deliverables        
 
-1.4 Assumptions and Constraints        5
+1.4 Assumptions and Constraints        
 
-_1.4.1 Assumptions        5_
+_1.4.1 Assumptions_
 
-_1.4.2 Constraints        5_
+_1.4.2 Definitions_
 
-1.5 Schedule and Budget Summary        6
+**2 STARTUP PLAN**        
 
-_1.5.1 Cost Estimate        6_
+2.1 Team Organization        
 
-_1.5.2 Schedule Summary        6_
+2.2 Project Communications        
 
-1.6 Success Criteria        7
+2.3 Technical Process        
 
-1.7 Definitions        7
+2.4 Tools        
 
-**2 STARTUP PLAN        8**
+**3 WORK PLAN**        
 
-2.1 Team Organization        8
+3.1 Release Plan        
 
-2.2 Project Communications        8
+**4 CONTROL PLAN**             
 
-2.3 Technical Process        9
+4.1 Configuration Management Plan        
 
-2.4 Tools        9
+**5 SUPPORTING PROCESS PLANS**       
 
-**3 WORK PLAN        9**
+5.1 Risk Management Plan        
 
-3.1 Resource Estimate        9
+5.2 Test Plan       
 
-3.2 Release Plan        9
-
-_3.2.1 Plan By Feature        9_
-
-_3.2.2 Flow Chart        10_
-
-3.3 Iteration Plans        10
-
-_3.3.1 First Iteration        11_
-
-_3.3.2 Second Iteration        11_
-
-_3.3.3 Final Product        11_
-
-**4 CONTROL PLAN        11**
-
-4.1 Monitoring and Control        11
-
-4.2 Configuration Management Plan        11
-
-**5 SUPPORTING PROCESS PLANS        12**
-
-5.1 Risk Management Plan        12
-
-5.2 Test Plan        13
-
-5.3 Product Acceptance Plan        13
+5.3 Product Acceptance Plan       
 
 # 1 Overview
 ## 1.1 Purpose and Scope
