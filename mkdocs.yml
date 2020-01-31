@@ -8,6 +8,7 @@ nav:
     - 'Test_Case_Specification': 'Test_Case_Specification.md'
     - 'System_Requirements_Documentation': 'System_Requirements_Documentation.md'
     - 'Memo_of_Understanding': 'Memo_of_Understanding.md'
+    - 'Iteration_Plan': 'Iteration_Plan.md'
 
 
 theme:
