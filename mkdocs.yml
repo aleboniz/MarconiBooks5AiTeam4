@@ -5,8 +5,8 @@ nav:
     - 'Software Requirements Specification Plan': 'Software_Requirements_Specification.md'
     - 'Software Project Management Plan': 'Software_Project_Management_Plan.md'
     - 'Release Plan': 'Release_Plan.md'
-   
-    
+    - 'Test_Case_Specification': 'Test_Case_Specification.md'
+
+
 theme:
     name: readthedocs
-
