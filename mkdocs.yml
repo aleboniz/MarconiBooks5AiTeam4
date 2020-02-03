@@ -9,6 +9,7 @@ nav:
     - 'System_Requirements_Documentation': 'System_Requirements_Documentation.md'
     - 'Memo_of_Understanding': 'Memo_of_Understanding.md'
     - 'Iteration_Plan': 'Iteration_Plan.md'
+    - 'Architecture_Design_CodingStandards': 'Architecture_Design_CodingStandards.md'
 
 
 theme:
