@@ -108,7 +108,7 @@ This layer is in charge of communicating to the database. This layer should hand
 
 
 
-## 3.5 Database Layer**
+## 3.5 Database Layer
 
 ### Purpose:
  This layer is in charge of storing data in persistent storage.
