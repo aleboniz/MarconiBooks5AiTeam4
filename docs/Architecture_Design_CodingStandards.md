@@ -83,18 +83,19 @@ This layer will be used to store User data, Landmark data, and Error data and Lo
 ### Associated Constructs:
 User Record, Landmark Record, Error Record
 
-- **User Record –** User Record will consist of only properties describing a user. This class will be static, meaning there is only one copy of this class in memory.
+- **User Record ** User Record will consist of only properties describing a user. This class will be static, meaning there is only one copy of this class in memory.
 
-  - **User id –** Numeric type descriptor to identify a user record.
-  - **User name -** Contains the name of the user, used to access the Marconi Books platform. This will be of type string.
+  - **User id ** Numeric type descriptor to identify a user record.
+  - **User name ** Contains the name of the user, used to access the Marconi Books platform. This will be of type string.
 
 
 
 - **Book Record** – Book Record will consist of only properties describing a Book.
+
   - **Book id** – Will hold the id of the book, to identify it. This property is of type numeric.
   - **Book name** – Will hold the name of the book. This property is of type string.
   - **Book class** – Will hold the class of the book. This property is of type string.
-  - **Book**  **price** –Will hold the price of the book. This property is of type numeric_._
+  - **Book price** –Will hold the price of the book. This property is of type numeric_._
 
 
 
