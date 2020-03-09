@@ -12,8 +12,6 @@
 | Version |    Date |       Author | Change Description |
 | --- | --- | --- | --- |
 |      1 | 31/01/2020 | Mattia Sandrini |          Draft 1 |
-|   |   |   |   |
-|   |   |   |   |
 
 
 # IDENTIFIER
@@ -94,9 +92,9 @@ The goals of this testing exercise include finding various user situations and t
 
 # TEST DELIVERABLES
 
-- .A test plan that delineates the testing phase of the development process
-- .A test specification document detailing steps in the testing procedures
-- .Test reports documenting incidents, defects and changes
+- A test plan that delineates the testing phase of the development process
+- A test specification document detailing steps in the testing procedures
+- Test reports documenting incidents, defects and changes
 
 
 
