@@ -10,6 +10,7 @@ nav:
     - 'Memo_of_Understanding': 'Memo_of_Understanding.md'
     - 'Iteration_Plan': 'Iteration_Plan.md'
     - 'Architecture_Design_CodingStandards': 'Architecture_Design_CodingStandards.md'
+    - 'Test_Pan': 'Test_Plan.md'
 
 
 theme:
