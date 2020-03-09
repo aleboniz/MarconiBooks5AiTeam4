@@ -11,6 +11,7 @@ nav:
     - 'Iteration Plan': 'Iteration_Plan.md'
     - 'Architecture Design & Coding Standards': 'Architecture_Design_CodingStandards.md'
     - 'Test Plan': 'Test_Plan.md'
+    - 'Project Success Criteria': 'Project_Success_Criteria.md'
 
 
 theme:
