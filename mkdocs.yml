@@ -5,8 +5,12 @@ nav:
     - 'Software Requirements Specification Plan': 'Software_Requirements_Specification.md'
     - 'Software Project Management Plan': 'Software_Project_Management_Plan.md'
     - 'Release Plan': 'Release_Plan.md'
-   
-    
+    - 'Test_Case_Specification': 'Test_Case_Specification.md'
+    - 'System_Requirements_Documentation': 'System_Requirements_Documentation.md'
+    - 'Memo_of_Understanding': 'Memo_of_Understanding.md'
+    - 'Iteration_Plan': 'Iteration_Plan.md'
+    - 'Architecture_Design_CodingStandards': 'Architecture_Design_CodingStandards.md'
+
+
 theme:
     name: readthedocs
-
