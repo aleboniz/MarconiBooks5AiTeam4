@@ -12,8 +12,14 @@ nav:
     - 'Architecture Design & Coding Standards': 'Architecture_Design_CodingStandards.md'
     - 'Test Plan': 'Test_Plan.md'
     - 'Project Success Criteria': 'Project_Success_Criteria.md'
-    - 'Business Model Canvas': 'Business_Model_Canvas.pdf'
-    - 'Project Model Canvas': 'Project_Model_Canvas.pdf'
+
+    - 'PDF Business Model Canvas': 'Business_Model_Canvas.pdf'
+    - 'PDF Project Model Canvas': 'Project_Model_Canvas.pdf'
+    - 'PDF Project Character': 'Project_Character.pdf'
+    - 'PDF Release Plan': 'Release_Plan.pdf'
+    - 'PDF Software Project Management Plan': 'Software_Project_Management_Plan.pdf'
+    - 'PDF Software Requirements Specification': 'Software_Requirements_Specification.pdf'
+
 
 
 theme:
