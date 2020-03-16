@@ -19,7 +19,13 @@ nav:
     - 'PDF Release Plan': 'Release_Plan.pdf'
     - 'PDF Software Project Management Plan': 'Software_Project_Management_Plan.pdf'
     - 'PDF Software Requirements Specification': 'Software_Requirements_Specification.pdf'
-
+    - 'PDF Test Case Specification': 'Test_Case_Specification.pdf'
+    - 'PDF System Requirements Documentation': 'System_Requirements_Documentation.pdf'
+    - 'PDF Memo of Understanding': 'Memo_of_Understanding.pdf'
+    - 'PDF Iteration Plan': 'Iteration_Plan.pdf'
+    - 'PDF Architecture Design & Coding Standards': 'Architecture_Design_CodingStandards.pdf'
+    - 'PDF Test Plan': 'Test_Plan.pdf'
+    - 'PDF Project Success Criteria': 'Project_Success_Criteria.pdf'
 
 
 theme:
