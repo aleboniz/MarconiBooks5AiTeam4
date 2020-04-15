@@ -19,11 +19,11 @@ ITI Marconi web site allows users a simple interface to access their account inf
 
 4. If you have not an account yet, create one pressing &quot;Registrati&quot;.
 
-![register](/marconibooksimage/register.png)
+![register](marconibooksimage/register.png)
 
 5. Then login.
 
-![home](/marconibooksimage/home.png)
+![home](marconibooksimage/home.png)
 
 
 # 2.0 Main Scenarios of Use
@@ -33,7 +33,7 @@ ITI Marconi web site allows users a simple interface to access their account inf
 
 1. Tap the &quot;Inizia a cercare&quot; button. The Search Menu will be brought up.
 
-![search](/marconibooksimage/search.png)
+![search](marconibooksimage/search.png)
 
 2. Enter book&#39;s data.
 3. Tap the &quot;Submit&quot; button.
@@ -44,7 +44,7 @@ ITI Marconi web site allows users a simple interface to access their account inf
 
 1. Tap the &quot;Aggiungi un libro&quot; button. The Add Menu will be brought up.
 
-![add](/marconibooksimage/add.png)
+![add](marconibooksimage/add.png)
 
 2. Enter book&#39;s data.
 3. Tap the &quot;Submit&quot; button.
@@ -55,11 +55,11 @@ ITI Marconi web site allows users a simple interface to access their account inf
 
 1. Tap the green button at the top of the page. Your personal page will be brought up.
 
-![personal](/marconibooksimage/personal.png)
+![personal](marconibooksimage/personal.png)
 
 2. You can modify your personal data.
 3. Scrolling down the page, you can check your book and remove it.
 
-![book](/marconibooksimage/book.png)
+![book](marconibooksimage/book.png)
 
 4. To logout, you simply have to click the red button at the top of the menu.
