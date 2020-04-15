@@ -12,6 +12,7 @@ nav:
     - 'Architecture Design & Coding Standards': 'Architecture_Design_CodingStandards.md'
     - 'Test Plan': 'Test_Plan.md'
     - 'Project Success Criteria': 'Project_Success_Criteria.md'
+    - 'User Guide': 'User_Guide.md'
 
     - 'PDF Business Model Canvas': 'Business_Model_Canvas.pdf'
     - 'PDF Project Model Canvas': 'Project_Model_Canvas.pdf'
@@ -26,6 +27,7 @@ nav:
     - 'PDF Architecture Design & Coding Standards': 'Architecture_Design_CodingStandards.pdf'
     - 'PDF Test Plan': 'Test_Plan.pdf'
     - 'PDF Project Success Criteria': 'Project_Success_Criteria.pdf'
+    - 'PDF User Guide': 'User_Guide.pdf'
 
 
 theme:
