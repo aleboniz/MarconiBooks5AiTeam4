@@ -2,7 +2,7 @@
 
 **Team 4 March 4, 2020**
 
-**Team Members**:Matta Sandrini, Davide Isoni, Alessandro Bonizzato
+**Team Members**: Matta Sandrini, Davide Isoni, Alessandro Bonizzato
 
 
 # 1.0 Introduction
@@ -11,7 +11,7 @@ ITI Marconi web site allows users a simple interface to access their account inf
 
 1. Enter Marconi Book website&#39;s page. The login screen will be brought up.
 
-![login](/marconibooksimage/login.png)
+![login](marconibooksimage/login.png)
 
 2. Enter your Username and Password.
 
