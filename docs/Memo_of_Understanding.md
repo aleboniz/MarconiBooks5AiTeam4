@@ -52,22 +52,14 @@ By signing this page, all parties agree to ensure compliance with applicable Fed
 
 ## Federal Communications Commission
 
-**Project Manager** Printed Name: \_\\_\_Davide Isoni\_\_\ Date:\_\_\_27/01/2020\_\_\_
+**Project Manager** Printed Name: \_\_\_Bonizzato Alessandro\_\_ Date:\_\_\_27/01/2020\_\_\_
 
-                                   Signature: \_\_\_\_\_\_\_\_\_davideisoni\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ E-Mail Address: \_\_\_\_isoni771@gmail.com\_\_\_\_\_\_
+**Customer Service Representative** Printed Name: \_\_\_Mattia Sandrini\_\_\_\_ Date: \_\_27/01/2020\_\_\_
 
-**Customer Service Representative** Printed Name: \_\_\_\_\_Mattia Sandrini\_\_\_\_\_\_\_\_\_\_\_\_\_ Date: \_\_\_\_\_27/01/2020\_\_\_\_\_
-
-                                Signature: \_\_\_\_\_\_\_\_mattiasandrini\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_E-Mail Address: mattiasandrini11@gmail.com
-
-**Computer Security Officer** Printed Name: \_\_\_\_\_\_Alessandro Bonizzato\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Date: \_\_\_27/01/2020\_\_\_\_
-
-                                 Signature: \_\_\_\_\_\_\_\_alessandrobonizzato\_\_\_\_\_\_\_\_\_\_ E-Mail Address: alessandro.bonizzato@gmail.com
+**Computer Security Officer** Printed Name: \_\_\_\_ Davide Isoni\_\_\__\_\_\_ Date: \_\_\_27/01/2020\_\_
 
 
 
 ## MOU Federal Agency Name
 
-**Project Manager** Printed Name: \_\_\_\_\_\_Davide Isoni\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Date:\_\_\_\_\_27/01/2020\_\_\_
-
-                                   Signature: \_\_\_\_\_\_\_davideisoni\_\_\_\_\_\_\_\_\_\_\_\_\_\_ E-Mail Address: \_\_\_\_isoni771@gmail.com\_\_\_\_\_
+**Project Manager** Printed Name: \_\_\_\_\_\_Alessandro Bonizzato\_\_\_\_\_ Date:\_\_\_\_\_27/01/2020\_\_\_
