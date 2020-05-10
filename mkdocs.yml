@@ -28,6 +28,7 @@ nav:
     - 'PDF Test Plan': 'Test_Plan.pdf'
     - 'PDF Project Success Criteria': 'Project_Success_Criteria.pdf'
     - 'PDF User Guide': 'User_Guide.pdf'
+    - 'PDF DPA model': 'DPA-model-English.pdf'
 
 
 theme:
